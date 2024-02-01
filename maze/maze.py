@@ -57,9 +57,9 @@ class Maze():
         with open(filename) as f:
             contents = f.read()
         # validate the start and end points of maze
-        if contents.count("A")!=1:
+        if contents.count("A") != 1:
             raise Exception("Maze should have one starting point")
-        if contents.count("B")!=1:
+        if contents.count("B") != 1:
             raise Exception("Maze should have one end point")
 
         # maze dimensions
